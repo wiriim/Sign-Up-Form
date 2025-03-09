@@ -14,12 +14,17 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 .container{
     width: 100vw;
     height: 100vh;
     display: flex;
 }
 
+/* Left Section */
 .section-left{
     width: 35%;
     background-color: antiquewhite;
@@ -28,10 +33,6 @@
     background-repeat: no-repeat;
     color: white;
     position: relative;
-}
-
-.section-right{
-    width: 65%;
 }
 
 .logo{
@@ -57,4 +58,88 @@
     right: 0;
     margin-inline: auto;
     width: fit-content;
+}
+
+/* Right Section */
+.section-right{
+    width: 65%;
+    background-color: var(--light-grey);
+}
+
+.opening{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 60px 0 30px 60px;
+}
+
+form{
+    background-color: white;
+    height: 45%;
+    padding: 25px 0 0 60px;
+    box-shadow: 0 10px 10px rgb(205, 204, 204);
+}
+
+form p{
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0 0 15px 0;
+}
+
+input{
+    font-family: inherit;
+    font-size: 100%;
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 250px;
+    border: 2px solid var(--light-grey);
+    border-radius: 5px;
+    appearance: none;
+}
+
+input:focus{
+    outline: none;
+    border-color: rgb(98, 202, 237);
+    box-shadow: 0 5px 10px rgb(205, 204, 204);
+}
+
+input:focus:invalid{
+    outline: none;
+    border-color: red;
+}
+
+label{
+    display: block;
+    font-weight: 400;
+    color: rgb(59, 58, 58);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.input-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 80%;
+}
+
+.submit{
+    margin: 35px 0 0 60px;
+}
+
+.submit button{
+    color: white;
+    background-color: var(--green);
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 3px 3px 5px rgb(195, 194, 194);
+    margin: 0 0 20px 0;
+    cursor: pointer;
+}
+
+.submit span{
+    color: var(--green);
+    font-weight: 600;
 }
