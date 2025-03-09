@@ -27,7 +27,7 @@ body{
 /* Left Section */
 .section-left{
     width: 35%;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     background-image: url(/images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
